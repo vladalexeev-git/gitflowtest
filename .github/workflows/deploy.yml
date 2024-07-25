@@ -24,7 +24,7 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
           REMOTE_USER: ${{ secrets.REMOTE_USER }}
-          TARGET: ${{ variables.TARGET }}
+          TARGET: ${{ vars.TARGET }}
 
       # выполнить удаленные команды на сервере - переместить #файлы, перезапустить веб-сервер.
       - name: Executing remote ssh commands using ssh key
